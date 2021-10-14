@@ -2,23 +2,39 @@ package atv23.view;
 
 import java.util.Scanner;
 
+import atv23.controller.LivroController;
 import atv23.model.Livro;
 
 public class LivroView {
     public static void main(String[] args) {
-        Livro l = new Livro(1);
+        LivroController liv = new LivroController();
+        
+        Livro l = new Livro(1);        
+        l.setAutor("a");
+        l.setEditora("a1");
+        l.setNome("aaaaaa");
+        liv.salvar(l);
+
+        Livro l2 = new Livro(1);        
+        l2.setAutor("a");
+        l2.setEditora("a1");
+        l2.setNome("aaaaaa");
+        liv.salvar(l2);
+
+       
 
         menu();
         Scanner sc = new Scanner(System.in);
         int op = Integer.parseInt(sc.nextLine());
 
         switch (op) {
-            case 1:                
-                l.setAutor("a");
-                l.setEditora("a1");
-                l.setNome("aaaaaa");
+            case 1:              
+             break;
+
+            case 2:
+                 listarLivros(liv);
                 
-                break;
+            break;
         
             default:
                 break;
@@ -34,6 +50,13 @@ public class LivroView {
         System.out.println("4- Alterar");
         System.out.println("5- Sair");
         System.out.println("Escolha opção");
+    }
+
+    public static void listarLivros(LivroController livroController){
+        for (Livro l : livroController.listar()) {
+            System.out.println(l);
+        }
+
     }
 
     

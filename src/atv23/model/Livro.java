@@ -37,6 +37,15 @@ public void setEditora(String editora) {
     this.editora = editora;
 }
 
+@Override
+public String toString() {
+    String resultado = "Id: " + this.id
+    + " Autor: " + this.autor
+    + " Nome: " + this.nome
+    + " Editora: " + this.editora;
+    return resultado;
+}
+
 
 
 

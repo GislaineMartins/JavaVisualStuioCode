@@ -9,7 +9,13 @@ import atv23.model.Livro;
  */
 public class LivroController {
 
-    private ArrayList<Livro> livros = new ArrayList<>();
+    private ArrayList<Livro> livros;
+
+    
+
+    public LivroController() {
+        this.livros = new ArrayList<Livro>();
+    }
 
     public void salvar(Livro livro){
         livros.add(livro);
