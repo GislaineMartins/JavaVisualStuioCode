@@ -30,9 +30,9 @@ public class LivroController {
     }
 
     public void alterar(Livro livro){
-        int tamanho = this.livros.size();
+        //int tamanho = this.livros.size();
 
-        for (int i=0; i < tamanho; i++) {
+        for (int i=0; i < livros.size(); i++) {
             Livro liv = this.livros.get(i);
             if(liv.getId() == livro.getId()){
                 deletar(livro);

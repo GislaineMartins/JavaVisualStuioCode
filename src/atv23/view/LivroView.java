@@ -15,10 +15,10 @@ public class LivroView {
         l.setNome("aaaaaa");
         liv.salvar(l);
 
-        Livro l2 = new Livro(1);        
-        l2.setAutor("a");
-        l2.setEditora("a1");
-        l2.setNome("aaaaaa");
+        Livro l2 = new Livro(2);        
+        l2.setAutor("b");
+        l2.setEditora("b1");
+        l2.setNome("bbbbb");
         liv.salvar(l2);
 
        
