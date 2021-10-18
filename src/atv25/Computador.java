@@ -5,11 +5,11 @@ public class Computador {
     public String memoria;
     public String processador;
     public String discoRigido;
-    
+
     @Override
     public String toString() {
-        return "Computador [discoRigido=" + discoRigido + ", marca=" + marca + ", memoria=" + memoria + ", processador="
-                + processador + "]";
+        return "discoRigido: " + discoRigido + ", marca: " + marca + ", memoria:" + memoria + ", processador: "
+                + processador;
     }
 
     
