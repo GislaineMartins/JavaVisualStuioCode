@@ -8,8 +8,8 @@ import atv23.model.Livro;
 public class LivroView {
     public static void main(String[] args) {
         LivroController liv = new LivroController();
-        
-        Livro l = new Livro(1);        
+                
+       /* Livro l = new Livro(1);        
         l.setAutor("a");
         l.setEditora("a1");
         l.setNome("aaaaaa");
@@ -19,26 +19,42 @@ public class LivroView {
         l2.setAutor("b");
         l2.setEditora("b1");
         l2.setNome("bbbbb");
-        liv.salvar(l2);
+        liv.salvar(l2); 
+        */
+             
 
-       
-
-        menu();
-        Scanner sc = new Scanner(System.in);
-        int op = Integer.parseInt(sc.nextLine());
-
-        switch (op) {
-            case 1:              
-             break;
-
-            case 2:
-                 listarLivros(liv);
-                
-            break;
         
-            default:
+        Scanner sc = new Scanner(System.in);
+        int op;
+               
+        
+        do{
+            menu();
+             op = Integer.parseInt(sc.nextLine()); 
+            switch (op) {
+                case 1: 
+                   dadosCadastro(liv);  
+                                  
                 break;
-        }
+    
+                case 2:
+                     listarLivros(liv);                    
+                break;
+
+                case 3:
+                System.out.println("----------LISTA DE LIVROS CADASTRADOS-----------");
+                listarLivros(liv); 
+                int del = escolhaIdDeletar();
+                
+                                    
+                break;
+            
+                default:
+                    break;
+            }
+
+        }while(op != 0);
+     
         
     }
 
@@ -59,6 +75,30 @@ public class LivroView {
 
     }
 
-    
+    public static void dadosCadastro(LivroController liv){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite id: ");
+        int id = Integer.parseInt(sc.nextLine());
+        System.out.println("Digite autor: ");
+        String autor = sc.nextLine();
+        System.out.println("Digite nome: ");
+        String nome = sc.nextLine();
+        System.out.println("Digite editora: ");
+        String editora = sc.nextLine();
+        Livro l = new Livro(id);
+        l.setAutor(autor);  
+        l.setNome(nome);
+        l.setEditora(editora);       
+        liv.salvar(l);
+    }
+
+    public static int escolhaIdDeletar(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Escolha o Id para deletar");
+        int delete = Integer.parseInt(sc.nextLine());
+        return delete;
+    }
+
+
     
 }
