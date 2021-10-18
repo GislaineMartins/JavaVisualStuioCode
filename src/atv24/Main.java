@@ -13,6 +13,9 @@ public class Main {
         carro.numPortas = 4;
         carro.capciPortaMalas = 1000.00;
 
+        Object obj1 = new Veiculo();
+        Object obj2 = new Carro();
+
     }
     
 }
