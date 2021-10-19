@@ -13,10 +13,8 @@ public class Pessoa {
         if(pessoa.nome == this.nome && pessoa.sobrenome == this.sobrenome && pessoa.idade == this.idade){
             return true;
         }
-        return false;
-       
+        return false;       
     }
-
 
 
     @Override
