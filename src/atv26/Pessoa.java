@@ -10,7 +10,7 @@ public class Pessoa {
     @Override
     public boolean equals(Object obj) {
         Pessoa pessoa = (Pessoa)obj;
-        if(pessoa.nome == this.nome && pessoa.sobrenome == this.sobrenome && pessoa.idade == this.idade){
+        if(this.nome.equals(obj.nome) && this.sobrenome.equals(obj.sobrenome) && this.idade.equals(obj.idade)){
             return true;
         }
         return false;       
