@@ -10,7 +10,7 @@ public class Produto extends BaseID{
 
     @Override
     public String toString() {    
-        return "Produto ID: " + this.id + "zn Nome: " + this.nome + this.categoria.toString();
+        return "Produto ID: " + this.id + "\n Nome: " + this.nome + this.categoria.toString();
     }
     
 }

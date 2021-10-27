@@ -9,11 +9,15 @@ public class Main {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         ProdutoController controller = new ProdutoController();
-        imprimeOpcoes();
-        int opcao = getNumero();
-        menu(opcao, controller);
+        int opcao; 
         
-    }
+        do{
+            imprimeOpcoes();
+            opcao = getNumero();
+            menu(opcao, controller); 
+        }while(opcao != 5);    
+             
+}
 
     public static void imprimeOpcoes(){
         System.out.println("Opções: \n 1 - Cadastrar \n 2- Atualizar \n 3 - Listar \n 4 - Deletar \n 5 - Sair");
@@ -36,35 +40,41 @@ public class Main {
     }
 
     public static void menu(int opcao, ProdutoController controler){
-        switch (opcao) {
-            case 1:
-            System.out.println("------------Cadastrar------------");
-            controler.create(cadastrar());
-            break;
-
-            case 2:
-            System.out.println("------------Atualizar------------");
-            controler.update(atualizar());
-            break;
-
-            case 3:
-            System.out.println("------------Listar------------");
-            controler.read();
-            break;
-
-            case 4:
-            System.out.println("------------Deletar------------");
-            controler.delete(deletar(controler));
-            break;
-
-            case 5:
-            System.out.println("------------Saindo. Obraigada------------");
-            break;              
-                
         
-            default:
+            switch (opcao) {
+                case 1:
+                System.out.println("------------Cadastrar------------");
+                controler.create(cadastrar());
                 break;
-        }
+    
+                case 2:
+                System.out.println("------------Atualizar------------"); 
+                Produto p = cadastrar();               
+                controler.update(p);
+                break;
+    
+                case 3:
+                System.out.println("------------Listando Produtos------------");
+                listar(controler);
+                break;
+    
+                case 4:
+                System.out.println("------------Deletar------------");
+                controler.delete(deletar(controler));
+                System.out.println("Produto deletado com sucesso!!");
+                break;
+    
+                case 5:
+                System.out.println("------------Saindo. Obrigada------------");
+                break;              
+                    
+            
+                default:
+                    break;
+            }
+
+       
+        
     }
 
     public static Produto cadastrar(){
@@ -77,10 +87,10 @@ public class Main {
         System.out.printf("Digite o nome do Produto:");
         p.nome = sc.nextLine();
 
-        System.out.printf("Digite o id da Categoria");
+        System.out.printf("Digite o id da Categoria: ");
         p.categoria.id = sc.nextLine();
 
-        System.out.printf("Digite a descriçaõ da Categoria");
+        System.out.printf("Digite a descriçaõ da Categoria:");
         p.categoria.descricao = sc.nextLine();
 
         return p;
