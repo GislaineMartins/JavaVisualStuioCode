@@ -1,4 +1,3 @@
-package atv26.ArrayList.controller;
 
 import java.util.ArrayList;
 
