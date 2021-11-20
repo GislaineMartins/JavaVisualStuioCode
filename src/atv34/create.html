@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Cadastrar Viagens</title>
+        <link rel="stylesheet" href="css/create.css">
+        <script src="js/create.js"></script>
+        
+    </head>
+    <body>
+        <h1>Cadastro de viagens</h1>
+        <h2>Nova Viagem</h2>
+        <form>
+            
+            <label>Id:</label><input type="number" id="id" /><br />
+            <label>UF:</label><input type="text" id="uf"/> <br />
+            <label>Destino:</label><input type="text" id="destino"/> <br />
+            <label>UF destino:</label><input type="text" id="ufDestino"/> <br />
+            <label>Data de Ida:</label><input type="text" id="dataIda"/> <br />
+            <label>Data de volta:</label><input type="text" id="dataVolta"/> <br />
+            <input type="submit" value="Salvar" onclick="salvar(event)">  
+                <button>limpar</button>  
+            <br />
+            <br />
+
+
+            <a href="index.html">Voltar ao menu</a>
+            
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>UF</th>
+                    <th>Destino</th>
+                    <th>UF destino</th>
+                    <th>Data de Ida</th>
+                    <th>Data de volta</th>
+                </tr>
+            </thead>
+            <tbody id="tabela">
+                
+            </tbody>
+        </table>
+        
+    </body>
+
+</html>
