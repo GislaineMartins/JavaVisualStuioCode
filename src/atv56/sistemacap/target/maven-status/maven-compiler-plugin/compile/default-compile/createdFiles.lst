@@ -1,0 +1,9 @@
+com\capgemini\dao\ProdutoDao.class
+com\capgemini\servlet\CategoriaReadServlet.class
+com\capgemini\servlet\ProdutoServlet.class
+com\capgemini\dao\ConnectionFactory.class
+com\capgemini\servlet\ProdutoReadServlet.class
+com\capgemini\dao\CategoriaDao.class
+com\capgemini\models\Categoria.class
+com\capgemini\servlet\CategoriaServlet.class
+com\capgemini\models\Produto.class
