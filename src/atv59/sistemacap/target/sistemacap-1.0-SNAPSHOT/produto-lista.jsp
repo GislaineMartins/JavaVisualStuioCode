@@ -42,7 +42,7 @@
                    <td><%= model.getPreco() %></td>
                 <td><%= model.getCategoriaId() %></td>
                 <td>
-                        <a href="/sistemacap-1/produto/alterar?id=<%= model.getId() %>">Alterar</a> |
+                        <a href="/sistemacap-1/produto/carregar?id=<%= model.getId() %>">Alterar</a> |
                         <a href="/sistemacap-1/produto/deletar?id=<%= model.getId() %>">Deletar</a>
                     </td>
                </tr>
