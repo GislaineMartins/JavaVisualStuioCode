@@ -1,0 +1,15 @@
+com\capgemini\servlet\ProdutoDeletarServlet.class
+com\capgemini\servlet\CategoriaAlterarServlet.class
+com\capgemini\dao\ConnectionFactory.class
+com\capgemini\servlet\ProdutoBuscarIdServlet.class
+com\capgemini\servlet\CategoriaBuscarIdServlet.class
+com\capgemini\dao\CategoriaDao.class
+com\capgemini\models\Categoria.class
+com\capgemini\servlet\CategoriaServlet.class
+com\capgemini\dao\ProdutoDao.class
+com\capgemini\servlet\CategoriaReadServlet.class
+com\capgemini\servlet\ProdutoServlet.class
+com\capgemini\servlet\ProdutoReadServlet.class
+com\capgemini\servlet\ProdutoAlterarServlet.class
+com\capgemini\servlet\CategoriaDeletarServlet.class
+com\capgemini\models\Produto.class
