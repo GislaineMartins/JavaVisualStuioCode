@@ -1,3 +1,4 @@
+com\capgemini\servlet\ProdutoDeletarServlet.class
 com\capgemini\servlet\CategoriaAlterarServlet.class
 com\capgemini\dao\ConnectionFactory.class
 com\capgemini\servlet\CategoriaBuscarIdServlet.class
