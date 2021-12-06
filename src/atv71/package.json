@@ -1,0 +1,12 @@
+{
+  "name": "atv71",
+  "version": "1.0.0",
+  "description": "atividade 71",
+  "main": "Teste.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gislaine",
+  "license": "ISC",
+  "type": "module"
+}
