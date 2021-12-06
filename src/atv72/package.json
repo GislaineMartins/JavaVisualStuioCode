@@ -1,0 +1,12 @@
+{
+  "name": "atv72",
+  "version": "1.0.0",
+  "description": "exercio 72",
+  "main": "Teste.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gislaine",
+  "license": "ISC",
+  "type": "module"
+}
